@@ -49,8 +49,8 @@
 		if (plugins.preloader.length && !isNoviBuilder) {
 			pageTransition({
 				page: $('.page'),
-				animDelay: 5,
-				animDuration: 5,
+				animDelay: 50,
+				animDuration: 50,
 				animIn: 'fadeIn',
 				animOut: 'fadeOut',
 				conditions: function (event, link) {
@@ -58,7 +58,7 @@
 				},
 				onReady: function () {
 					clearTimeout(loaderTimeoutId);
-					plugins.preloader.addClass('loaded');
+					// plugins.preloader.addClass('loaded');
 					windowReady = true;
 				}
 			});
@@ -651,7 +651,7 @@
 			loaderTimeoutId = setTimeout(function () {
 				// if (!windowReady && !isNoviBuilder) plugins.preloader.removeClass('loaded');
 				if (true && !isNoviBuilder) plugins.preloader.removeClass('loaded');
-			}, .2);
+			}, .0002);
 		}
 
 		// Add custom styling options for input[type="radio"]
