@@ -13832,7 +13832,7 @@ Version: 3.5.4 Timestamp: Sun Aug 30 13:30:32 EDT 2015
 	vertical-align: middle;
 	text-align: left;
 	min-height: 60px;
-	min-width: 256px;
+	min-width: 149px;
 	margin: 0;
 	padding: 0;
 	letter-spacing: .075em;
@@ -13860,56 +13860,55 @@ Version: 3.5.4 Timestamp: Sun Aug 30 13:30:32 EDT 2015
 	/* css3 */
 }
 
-.select2-container .select2-choice {
+/* .select2-container .select2-choice {
 	display: block;
 	position: relative;
 	color: #777777;
 	background-color: #ffffff;
-	padding: 16px 40px 16px 26px;
+	padding: 16px 4px 16px 5px;
 	border-radius: 0;
 	text-decoration: none;
-	min-height: inherit;
-}
+	min-height: inherit; 
+}*/
 
-.select2-container .select2-choice > .select2-chosen {
+/* .select2-container .select2-choice > .select2-chosen {
 	display: block;
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
-}
+} */
 
-.select2-dropdown-open11 .select2-choice {
+/* .select2-dropdown-open11 .select2-choice {
 	border-bottom-left-radius: 0;
 	border-bottom-right-radius: 0;
-}
+} */
 
-.select2-arrow {
+/* .select2-arrow {
 	display: inline-block;
 	position: absolute;
-	right: 14px;
+	right: 5px;
 	top: 50%;
 	transform: translateY(-50%);
 	line-height: 1;
-}
+} */
 
-.select2-arrow b:before {
+/* .select2-arrow b:before {
 	display: inline-block;
 	font-weight: 400;
 	content: "";
 	font-family: "Material Design Icons";
 	font-size: 20px;
-	transform: rotate(0deg);
-}
+} */
 
 .select2-dropdown-open11 .select2-arrow b:before {
 	transform: rotate(180deg);
 }
 
-.select2-container .select2-choice abbr {
+/* .select2-container .select2-choice abbr {
 	display: none;
-}
+} */
 
-.select2-drop-mask {
+/* .select2-drop-mask {
 	border: 0;
 	margin: 0;
 	padding: 0;
@@ -13923,11 +13922,11 @@ Version: 3.5.4 Timestamp: Sun Aug 30 13:30:32 EDT 2015
 	opacity: 0;
 	z-index: 99;
 	/* styles required for IE to work */
-	background-color: #ffffff;
+	 /* background-color: #ffffff;
 	filter: alpha(opacity=0);
-}
+}  */
 
-.select2-drop {
+/* .select2-drop {
 	width: 100%;
 	margin-top: -1px;
 	position: absolute;
@@ -13938,33 +13937,33 @@ Version: 3.5.4 Timestamp: Sun Aug 30 13:30:32 EDT 2015
 	border: 1px solid #e1e1e1;
 	border-top: 0;
 	border-radius: 0 0 0 0;
-}
+} */
 
-.select2-drop-active {
+/* .select2-drop-active {
 	border: 1px solid #6046b6;
 	border-top: 0;
-}
+} */
 
-.select2-drop.select2-drop-above {
+/* .select2-drop.select2-drop-above {
 	margin-top: 1px;
 	border-top: 1px solid #e1e1e1;
 	border-bottom: 0;
-}
+} */
 
-.select2-drop.select2-drop-above.select2-drop-active {
-	border: 1px solid #6046b6;
-}
+/* .select2-drop.select2-drop-above.select2-drop-active {
+	border: 1px solid #6046b6; 
+} */
 
-.select2-search {
+/* .select2-search {
 	display: inline-block;
 	width: 100%;
 	padding: 4px 4px 0;
 	position: relative;
 	z-index: 10000;
 	white-space: nowrap;
-}
+} */
 
-.select2-search:before {
+/* .select2-search:before {
 	position: absolute;
 	right: 25px;
 	top: 50%;
@@ -13974,9 +13973,9 @@ Version: 3.5.4 Timestamp: Sun Aug 30 13:30:32 EDT 2015
 	font-family: "Material Design Icons";
 	font-size: 20px;
 	line-height: 1;
-}
+} */
 
-.select2-search input {
+/* .select2-search input {
 	width: 100%;
 	padding: 5px 35px 5px 5px;
 	margin: 0;
@@ -13985,15 +13984,15 @@ Version: 3.5.4 Timestamp: Sun Aug 30 13:30:32 EDT 2015
 	background-color: #ffffff;
 	color: #777777;
 	border: 1px solid #e1e1e1;
-}
+} */
 
-.select2-dropdown-open11.select2-drop-above .select2-choice,
+/* .select2-dropdown-open11.select2-drop-above .select2-choice,
 .select2-dropdown-open11.select2-drop-above .select2-choices {
 	border: 1px solid #e1e1e1;
 	border-top-color: transparent;
-}
+} */
 
-.select2-hidden-accessible {
+/* .select2-hidden-accessible {
 	border: 0;
 	clip: rect(0 0 0 0);
 	height: 1px;
@@ -14002,10 +14001,10 @@ Version: 3.5.4 Timestamp: Sun Aug 30 13:30:32 EDT 2015
 	padding: 0;
 	position: absolute;
 	width: 1px;
-}
+} */
 
 /* results */
-.select2-results {
+/* .select2-results {
 	padding: 4px 4px;
 	position: relative;
 	overflow-x: hidden;
@@ -14051,12 +14050,12 @@ Version: 3.5.4 Timestamp: Sun Aug 30 13:30:32 EDT 2015
 .select2-results .select2-highlighted ul {
 	background: #ffffff;
 	color: #000000;
-}
+} */
 
 /*
 disabled look for disabled choices in the results dropdown
 */
-.select2-results .select2-disabled.select2-highlighted {
+/* .select2-results .select2-disabled.select2-highlighted {
 	color: #ffffff;
 	background: #6046b6;
 	display: list-item;
@@ -14075,139 +14074,11 @@ disabled look for disabled choices in the results dropdown
 
 .select2-results .select2-ajax-error {
 	background: rgba(255, 50, 50, 0.2);
-}
+} */
 
-.select2-more-results {
-	background: #f4f4f4;
-	display: list-item;
-}
-
-/* disabled styles */
-.select2-container.select2-container-disabled .select2-choice {
-	background-color: #f4f4f4;
-	background-image: none;
-	border: 1px solid #ddd;
-	cursor: default;
-}
-
-.select2-container.select2-container-disabled .select2-choice .select2-arrow {
-	background-color: #f4f4f4;
-	background-image: none;
-	border-left: 0;
-}
-
-.select2-container.select2-container-disabled .select2-choice abbr {
-	display: none;
-}
-
-/* multiselect */
-.select2-container-multi {
-	display: flex;
-	align-items: stretch;
-	height: auto;
-	min-height: 60px;
-}
-
-.select2-container-multi .select2-choices {
-	display: flex;
-	flex-flow: row;
-	align-items: center;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	position: relative;
-	line-height: 0;
-	cursor: text;
-	overflow: hidden;
-}
-
-.select2-locked {
-	padding: 3px 5px 3px 5px !important;
-}
-
-.select2-container-multi .select2-choices {
-	min-height: 26px;
-}
-
-.select2-container-multi .select2-choices .select2-search-field {
-	margin: 0;
-	padding: 0;
-	white-space: nowrap;
-}
-
-.select2-container-multi .select2-choices .select2-search-field input {
-	width: 100% !important;
-	outline: 0;
-	border: 0;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-	background: transparent !important;
-}
-
-.select2-container-multi .select2-choices .select2-search-choice {
-	padding: 4px 5px 4px 20px;
-	margin: 3px 0 3px 5px;
-	position: relative;
-	line-height: 13px;
-	cursor: default;
-	border: 1px solid #c8c8c8;
-	background-clip: padding-box;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	background-color: #c8c8c8;
-}
-
-.select2-container-multi .select2-choices .select2-search-choice .select2-chosen {
-	cursor: default;
-}
-
-.select2-search-choice-close {
-	display: block;
-	width: 12px;
-	height: 13px;
-	position: absolute;
-	right: 3px;
-	top: 3px;
-	color: #2c343b;
-}
-
-.select2-search-choice-close:before {
-	display: inline-block;
-	content: '\f24c';
-	font-family: "Material Design Icons";
-	font-size: 12px;
-	line-height: 1;
-}
-
-.select2-container-multi .select2-search-choice-close {
-	left: 3px;
-}
-
-/* disabled styles */
-.select2-container-multi.select2-container-disabled .select2-choices {
-	background-color: #f4f4f4;
-	background-image: none;
-	border: 1px solid #ddd;
-	cursor: default;
-}
-
-.select2-container-multi.select2-container-disabled .select2-choices .select2-search-choice {
-	padding: 3px 5px 3px 5px;
-	border: 1px solid #ddd;
-	background-image: none;
-	background-color: #f4f4f4;
-}
-
-.select2-container-multi.select2-container-disabled .select2-choices .select2-search-choice .select2-search-choice-close {
-	display: none;
-	background: none;
-}
 
 /* end multiselect */
-.select2-result-selectable .select2-match,
+/* .select2-result-selectable .select2-match,
 .select2-result-unselectable .select2-match {
 	text-decoration: underline;
 }
@@ -14237,7 +14108,7 @@ disabled look for disabled choices in the results dropdown
 	width: 100px;
 	height: 100px;
 	overflow: scroll;
-}
+} */
 
 .slick-slider {
 	position: relative;
@@ -15192,4 +15063,10 @@ disabled look for disabled choices in the results dropdown
 		padding-left: 70px;
 		padding-right: 70px;
 	}
+}
+
+@media (min-width: 1000px){
+.rd-navbar-modern.rd-navbar-static .rd-navbar-main {
+    padding-right: 0px;
+}
 }

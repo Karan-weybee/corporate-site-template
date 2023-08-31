@@ -49,8 +49,8 @@
 		if (plugins.preloader.length && !isNoviBuilder) {
 			pageTransition({
 				page: $('.page'),
-				animDelay: 500,
-				animDuration: 500,
+				animDelay: 5,
+				animDuration: 5,
 				animIn: 'fadeIn',
 				animOut: 'fadeOut',
 				conditions: function (event, link) {
@@ -649,8 +649,9 @@
 		// Page loader
 		if (plugins.preloader.length) {
 			loaderTimeoutId = setTimeout(function () {
-				if (!windowReady && !isNoviBuilder) plugins.preloader.removeClass('loaded');
-			}, 2000);
+				// if (!windowReady && !isNoviBuilder) plugins.preloader.removeClass('loaded');
+				if (true && !isNoviBuilder) plugins.preloader.removeClass('loaded');
+			}, .2);
 		}
 
 		// Add custom styling options for input[type="radio"]

@@ -16,12 +16,100 @@
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/logo-slider.css">
+
   <!--[if lt IE 10]>
     <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
     <script src="js/html5shiv.min.js"></script>
     <![endif]-->
   <style>
+    .about-image img:hover {
+      box-shadow: 0px 0px 25px #38393b;
+      column-gap: 30px;
+    }
 
+
+    .wrapper {
+      /* position: absolute; */
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      padding: 1em 0;
+    }
+    .wrapper .container:hover{
+      box-shadow: 0px 0px 20px white;
+    }
+    .wrapper .container {
+      margin-top: 0%;
+      width: 28vmin;
+      height: 28vmin;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      font-size: 16px;
+      border-radius: 0.5em;
+      backdrop-filter: blur(10px);
+
+      box-shadow: -1px -1px 4px #aaa9a9a2,
+        1px 1px 7px rgba(147, 149, 151, 0.671);
+    }
+
+    .wrapper .container span.num {
+      color: white;
+      display: grid;
+      place-items: center;
+      font-weight: 600;
+      font-size: 3em;
+    }
+
+    .wrapper .container span.text {
+      color: white;
+      font-size: 1em;
+      text-align: center;
+      pad: 0.7em 0;
+      font-weight: 400;
+      line-height: 0;
+    }
+
+    @media screen and (max-width: 1024px) {
+      .wrapper {
+        width: 85vw;
+      }
+
+      .wrapper .container {
+        height: 26vmin;
+        width: 26vmin;
+        font-size: 12px;
+      }
+    }
+
+    @media screen and (max-width: 1242px) {
+      .wrapper {
+        width: 100vw;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+
+      .wrapper .container {
+        width: calc(50% - 40px);
+        height: 30vmin;
+        margin-bottom: 25px;
+        font-size: 14px;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .wrapper {
+        gap: 15px;
+      }
+
+      .wrapper .container {
+        width: 100%;
+        height: 25vmin;
+        font-size: 8px;
+        margin-bottom: 25px;
+      }
+    }
   </style>
 </head>
 
@@ -99,7 +187,7 @@
                     <li>
                       <div class="unit unit-spacing-xs">
                         <div class="unit-left"><span class="icon mdi mdi-map-marker"></span></div>
-                        <div class="unit-body"><a class="address" href="#">514 S. Magnolia St. Orlando, FL 32806</a>
+                        <div class="unit-body"><a class="address" href="#">514 S. Magnolia </a>
                         </div>
                       </div>
                     </li>
@@ -111,6 +199,7 @@
                     <li><a class="icon mdi mdi-google-plus" href="#"></a></li>
                   </ul>
                 </div>
+
                 <div class="rd-navbar-main" style="padding-left: 5px;">
                   <!-- RD Navbar Nav-->
                   <ul class="rd-navbar-nav">
@@ -120,22 +209,20 @@
                     </li>
                     <!-- <li class="rd-nav-item"><a class="rd-nav-link" href="typography.html">Typography</a>
                       </li> -->
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">updates
-
-                      </a>
-
-
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="update.html">updates</a>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html"><span id="product">
-                          product</span>
-                        <!-- <div class="dropdown-menu">
-                          <a class="dropdown-item" href="productdetails.html">lorem ipsum Dolor</a>
-                          <a class="dropdown-item" href="productdetails.html">lorem ipsum Dolor</a>
-                          <a class="dropdown-item" href="productdetails.html">lorem ipsum Dolor</a>
-                          <a class="dropdown-item" href="productdetails.html">lorem ipsum Dolor</a>
-                          <a class="dropdown-item" href="productdetails.html">lorem ipsum Dolor</a>
-                      </div> -->
+                    <li class="rd-nav-item">
+                      <span class="rd-nav-link" href="contacts.html">
+                      <a href="product.html">
+                        <select class="" name="" id="" style="border: 1px; padding: 1px;">
+                          <option value="">product</option>
+                         <option value="1"> lorem</option>
+                          <option value="1"> lorem</option>
+                          <option value="1"> lorem</option>
+                          <option value="1"> lorem</option>
+                        </select>
                       </a>
+                      </span>
                     </li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="gallery.html">Gallery</a>
                     </li>
@@ -150,13 +237,8 @@
 
                   $('.dropdown-menu').toggleClass("show");
 
-
                 });
               </script>
-              <!-- <div class="rd-navbar-project-hamburger rd-navbar-project-hamburger-open rd-navbar-fixed-element-1" data-multitoggle=".rd-navbar-inner" data-multitoggle-blur=".rd-navbar-wrap" data-multitoggle-isolate="data-multitoggle-isolate"> -->
-              <!-- <div class="project-hamburger"><span class="project-hamburger-arrow"></span><span class="project-hamburger-arrow"></span><span class="project-hamburger-arrow"></span>
-                  </div> -->
-              <!-- </div> -->
               <div class="rd-navbar-project">
                 <div class="rd-navbar-project-header">
                   <h5 class="rd-navbar-project-title">Gallery</h5>
@@ -295,6 +377,26 @@
         </div>
       </div>
     </section>
+    <br><br>
+    <!-- about  -->
+    <div class="">
+      <!-- Tab panes-->
+      <div class="" style="display: flex; justify-content: center; flex-wrap: wrap;">
+        <div class="" id="" style="width: 500px; padding: 15px;">
+          <h4>Welcome to lorem </h4>
+          <p>Albus, dexter particulas grauiter consumere de ferox, bi-color abactus. Impositios studere, tanquam
+            mirabilis hippotoxota. Cur torus manducare? Pol, vox! Cum barcas nocere, omnes specieses contactus</p>
+          <p>Lotus advenas ducunt ad gemna. Ubi est domesticus domina? Heu, barbatus mens! Cum elogium favere, omnes
+            lubaes tractare talis, barbatus adiuratores. Mirabilis hydras ducunt ad danista. Dominas sunt accentors de
+            germanus cacula. Amicitias prarere in alta muta! Ecce, bubo! Nunquam promissio verpa. Talis, primus fugas
+            recte consumere de audax, festus indictio. Nunquam quaestio scutum. Valebats</p>
+        </div>
+        <div style="padding: 15px;" class="about-image">
+          <img src="images/about-banner.webp" alt="" width="700" height="418" style="border-radius: 20px;" />
+        </div>
+      </div>
+    </div>
+    <!-- about end  -->
     <!-- What We Offer-->
     <!-- <section class="section section-md bg-default">
         <div class="container">
@@ -388,6 +490,53 @@
         </div>
       </section> -->
 
+
+    <!-- counter  -->
+    <br>
+    <div class="div" style="margin: 2em 0;">
+      <h3>Our retailer Number</h3>
+    </div>
+    <div class="wrapper" style="background-color: #38393b;">
+      <div class="container">
+        <span class="num" data-val="365">000</span>
+        <span class="text">Lorem count</span>
+      </div>
+
+      <div class="container">
+        <span class="num" data-val="290">000</span>
+        <span class="text">Lorem count</span>
+      </div>
+
+      <div class="container">
+        <span class="num" data-val="219">000</span>
+        <span class="text">Lorem count</span>
+      </div>
+
+      <div class="container">
+        <span class="num" data-val="140">000</span>
+        <span class="text">Lorem count</span>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      let valueDisplays = document.querySelectorAll(".wrapper .container span.num");
+      let interval = 4000;
+
+      valueDisplays.forEach((valueDisplay) => {
+        let startValue = 0;
+        let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+        let duration = Math.floor(interval / endValue);
+        let counter = setInterval(function () {
+          startValue += 1;
+          valueDisplay.textContent = startValue;
+          if (startValue == endValue) {
+            clearInterval(counter);
+          }
+        }, duration);
+      });
+    </script>
+
+    <!-- number counter end  -->
     <!-- Our Shop-->
     <section class="section section-lg bg-default">
       <div class="container">
@@ -396,7 +545,7 @@
           <div class="col-sm-6 col-lg-4 col-xl-3">
             <!-- Product-->
             <article class="product wow fadeInLeft" data-wow-delay=".15s">
-              <div class="product-figure"><img src="images/product-1-161x162.png" alt="" width="161" height="162" />
+              <div class="product-figure"><img src="images/product-image-_1_.webp" alt="" width="171" height="162"/>
               </div>
               <div class="product-rating"><span class="mdi mdi-star"></span><span class="mdi mdi-star"></span><span
                   class="mdi mdi-star"></span><span class="mdi mdi-star"></span><span
@@ -417,7 +566,7 @@
           <div class="col-sm-6 col-lg-4 col-xl-3">
             <!-- Product-->
             <article class="product wow fadeInLeft" data-wow-delay=".1s">
-              <div class="product-figure"><img src="images/product-2-161x162.png" alt="" width="161" height="162" />
+              <div class="product-figure"><img src="images/product-image-_1_.webp" alt="" width="161" height="162" />
               </div>
               <div class="product-rating"><span class="mdi mdi-star"></span><span class="mdi mdi-star"></span><span
                   class="mdi mdi-star"></span><span class="mdi mdi-star"></span><span class="mdi mdi-star"></span>
@@ -437,7 +586,7 @@
           <div class="col-sm-6 col-lg-4 col-xl-3">
             <!-- Product-->
             <article class="product wow fadeInLeft" data-wow-delay=".05s">
-              <div class="product-figure"><img src="images/product-3-161x162.png" alt="" width="161" height="162" />
+              <div class="product-figure"><img src="images/product-image-_1_.webp" alt="" width="161" height="162" />
               </div>
               <div class="product-rating"><span class="mdi mdi-star"></span><span class="mdi mdi-star"></span><span
                   class="mdi mdi-star"></span><span class="mdi mdi-star"></span><span
@@ -458,7 +607,7 @@
           <div class="col-sm-6 col-lg-4 col-xl-3">
             <!-- Product-->
             <article class="product wow fadeInLeft">
-              <div class="product-figure"><img src="images/product-4-161x162.png" alt="" width="161" height="162" />
+              <div class="product-figure"><img src="images/product-image-_1_.webp" alt="" width="161" height="162" />
               </div>
               <div class="product-rating"><span class="mdi mdi-star"></span><span class="mdi mdi-star"></span><span
                   class="mdi mdi-star"></span><span class="mdi mdi-star"></span><span class="mdi mdi-star"></span>
@@ -514,68 +663,7 @@
     </section>
 
     <!-- What We Offer-->
-    <section class="section section-xl bg-default">
-      <div class="container">
-        <h3 class="wow fadeInLeft">What People Say</h3>
-      </div>
-      <div class="container container-style-1">
-        <div class="owl-carousel owl-style-12" data-items="1" data-sm-items="2" data-lg-items="3" data-margin="30"
-          data-xl-margin="45" data-autoplay="true" data-nav="true" data-center="true" data-smart-speed="400">
-          <!-- Quote Tara-->
-          <article class="quote-tara">
-            <div class="quote-tara-caption">
-              <div class="quote-tara-text">
-                <p class="q">productHouse is the longest lasting product place in the city and is well run and staffed.
-                  Prices are great and allow me to keep coming back.</p>
-              </div>
-              <div class="quote-tara-figure"><img src="images/user-6-115x115.jpg" alt="" width="115" height="115" />
-              </div>
-            </div>
-            <h6 class="quote-tara-author">Ashley Fitzgerald</h6>
-            <div class="quote-tara-status">Client</div>
-          </article>
-          <!-- Quote Tara-->
-          <article class="quote-tara">
-            <div class="quote-tara-caption">
-              <div class="quote-tara-text">
-                <p class="q">I am a real product addict, and even when I’m home I prefer your products to all others.
-                  They taste awesome and are very affordable.</p>
-              </div>
-              <div class="quote-tara-figure"><img src="images/user-8-115x115.jpg" alt="" width="115" height="115" />
-              </div>
-            </div>
-            <h6 class="quote-tara-author">Stephanie Williams</h6>
-            <div class="quote-tara-status">Client</div>
-          </article>
-          <!-- Quote Tara-->
-          <article class="quote-tara">
-            <div class="quote-tara-caption">
-              <div class="quote-tara-text">
-                <p class="q">productHouse has amazing product. Not only do you get served with a great attitude, you
-                  also get delicious product at a great price!</p>
-              </div>
-              <div class="quote-tara-figure"><img src="images/user-7-115x115.jpg" alt="" width="115" height="115" />
-              </div>
-            </div>
-            <h6 class="quote-tara-author">Bill Johnson</h6>
-            <div class="quote-tara-status">Client</div>
-          </article>
-          <!-- Quote Tara-->
-          <article class="quote-tara">
-            <div class="quote-tara-caption">
-              <div class="quote-tara-text">
-                <p class="q">productHouse has great product. Not only do you get served with a great attitude and
-                  delivered delicious product, you get a great price.</p>
-              </div>
-              <div class="quote-tara-figure"><img src="images/user-9-115x115.jpg" alt="" width="115" height="115" />
-              </div>
-            </div>
-            <h6 class="quote-tara-author">Aaron Wilson</h6>
-            <div class="quote-tara-status">Client</div>
-          </article>
-        </div>
-      </div>
-    </section>
+    
 
 
     <!-- Section Services  Last section-->
@@ -655,48 +743,48 @@
     <br><br>
     <script>
       // In HTML, .display-area has the width of 4 cards = 880px. Each card is 200px width and margin set to 10px.
-// .display-area has a .cards-wrapper which contains all the cards. .cards-wrapper is set to display flex.
-// .display-area has overflow hidden to hide the portion of cards-wrapper which extends beyond the container's width.
+      // .display-area has a .cards-wrapper which contains all the cards. .cards-wrapper is set to display flex.
+      // .display-area has overflow hidden to hide the portion of cards-wrapper which extends beyond the container's width.
 
-const wrapper = document.querySelector('.cards-wrapper');
-// console.log(wrapper.clientWidth);
+      const wrapper = document.querySelector('.cards-wrapper');
+      // console.log(wrapper.clientWidth);
 
-// grab the dots
-const dots = document.querySelectorAll('.dot');
-// the default active dot num which is array[0]
-let activeDotNum = 0;
+      // grab the dots
+      const dots = document.querySelectorAll('.dot');
+      // the default active dot num which is array[0]
+      let activeDotNum = 0;
 
-dots.forEach((dot, idx) => {  
-//   number each dot according to array index
-  dot.setAttribute('data-num', idx);
-  
-//   add a click event listener to each dot
-  dot.addEventListener('click', (e) => {
-    
-    let clickedDotNum = e.target.dataset.num;
-    // console.log(clickedDotNum);
-//     if the dot clicked is already active, then do nothing
-    if(clickedDotNum == activeDotNum) {
-      // console.log('active');
-      return;
-    }
-    else {
-      // console.log('not active');
-      // shift the wrapper
-      let displayArea = wrapper.parentElement.clientWidth;
-      // let pixels = -wrapper.clientWidth * clickedDotNum;
-      let pixels = -displayArea * clickedDotNum
-      wrapper.style.transform = 'translateX('+ pixels + 'px)';
-//       remove the active class from the active dot
-      dots[activeDotNum].classList.remove('active');
-//       add the active class to the clicked dot
-      dots[clickedDotNum].classList.add('active');
-//       now set the active dot number to the clicked dot;
-      activeDotNum = clickedDotNum;
-    }
-    
-  });
-});
+      dots.forEach((dot, idx) => {
+        //   number each dot according to array index
+        dot.setAttribute('data-num', idx);
+
+        //   add a click event listener to each dot
+        dot.addEventListener('click', (e) => {
+
+          let clickedDotNum = e.target.dataset.num;
+          // console.log(clickedDotNum);
+          //     if the dot clicked is already active, then do nothing
+          if (clickedDotNum == activeDotNum) {
+            // console.log('active');
+            return;
+          }
+          else {
+            // console.log('not active');
+            // shift the wrapper
+            let displayArea = wrapper.parentElement.clientWidth;
+            // let pixels = -wrapper.clientWidth * clickedDotNum;
+            let pixels = -displayArea * clickedDotNum
+            wrapper.style.transform = 'translateX(' + pixels + 'px)';
+            //       remove the active class from the active dot
+            dots[activeDotNum].classList.remove('active');
+            //       add the active class to the clicked dot
+            dots[clickedDotNum].classList.add('active');
+            //       now set the active dot number to the clicked dot;
+            activeDotNum = clickedDotNum;
+          }
+
+        });
+      });
     </script>
     <!-- logo slider end -->
     <footer class="section footer-modern context-dark footer-modern-2">
